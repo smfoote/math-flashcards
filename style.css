@@ -1,0 +1,68 @@
+body,
+html {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: inherit;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+h1,
+p {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#flash-card {
+  border: 3px solid rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 90px;
+  width: 400px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 400ms ease-in-out;
+}
+
+#flash-card.correct-answer {
+  border-color: #03d400;
+  background-color: rgba(3, 212, 0, 0.25);
+}
+#flash-card.wrong-answer {
+  border-color: #e40000;
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.operand {
+  text-align: right;
+  width: 156px;
+}
+.operand--b::before {
+  content: 'x';
+  font-size: 64px;
+  margin-right: 24px;
+}
+
+.operand--b {
+  border-bottom: 4px solid black;
+}
+
+#start {
+  border: none;
+  background: none;
+  font-size: 48px;
+  color: green;
+}
