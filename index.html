@@ -16,8 +16,29 @@
   <body>
     <h1>Math Flash!</h1>
 
-    <div id="flash-card"><button id="start">START!</button></div>
-    <!-- <div id="answer"></div> -->
+    <div id="flash-card">
+      <button class="test-type" data-operator="add" id="addition-button">
+        Addition
+      </button>
+      <button
+        class="test-type"
+        data-operator="subtract"
+        id="subtraction-button"
+      >
+        Subtraction
+      </button>
+      <button
+        class="test-type"
+        data-operator="multiply"
+        id="multiplication-button"
+      >
+        Multiplication
+      </button>
+      <button class="test-type" data-operator="divide" id="division-button">
+        Division
+      </button>
+    </div>
+    <div id="answer"></div>
 
     <script src="script.js"></script>
   </body>

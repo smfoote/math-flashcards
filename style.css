@@ -51,18 +51,46 @@ p {
   width: 156px;
 }
 .operand--b::before {
-  content: 'x';
   font-size: 64px;
   margin-right: 24px;
+}
+.add .operand--b::before {
+  content: '+';
+}
+.subtract .operand--b::before {
+  content: '-';
+}
+.multiply .operand--b::before {
+  content: 'x';
+}
+.divide .operand--b::before {
+  content: '÷';
 }
 
 .operand--b {
   border-bottom: 4px solid black;
 }
 
-#start {
+button {
   border: none;
   background: none;
   font-size: 48px;
+  cursor: pointer;
+}
+
+.test-type:not(:last-of-type) {
+  border-bottom: 2px solid black;
+}
+
+#start {
   color: green;
+}
+
+#answer {
+  display: flex;
+  width: 400px;
+  margin: 0 auto;
+  justify-content: center;
+  font-size: 45px;
+  color: #ff002e;
 }
