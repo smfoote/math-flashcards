@@ -1,0 +1,8 @@
+body{font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}main.svelte-qe38ee{text-align:center;padding:1em;max-width:240px;margin:0 auto}h1.svelte-qe38ee{font-size:4em;font-weight:100}@media(min-width: 640px){main.svelte-qe38ee{max-width:none}}
+section.svelte-12b3ko6{border:3px solid rgba(0, 0, 0, 0.5);background-color:#fff;border-radius:8px;width:400px;height:500px;margin:0 auto;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:all 400ms ease-in-out}section.correct-answer.svelte-12b3ko6{border-color:#03d400;background-color:rgba(3, 212, 0, 0.25)}section.wrong-answer.svelte-12b3ko6{border-color:#e40000;background-color:rgba(255, 0, 0, 0.25)}
+div.svelte-o5jds6{display:flex;width:400px;margin:0 auto;justify-content:center;font-size:45px;color:#ff002e}
+.operand.svelte-mr8j50{text-align:right;font-size:48px;width:156px}.operand--b.svelte-mr8j50::before{font-size:64px;margin-right:24px}.operand--b.svelte-mr8j50{border-bottom:4px solid black}.add.operand--b.svelte-mr8j50::before{content:'+'}.subtract.operand--b.svelte-mr8j50::before{content:'-'}.multiply.operand--b.svelte-mr8j50::before{content:'x'}.divide.operand--b.svelte-mr8j50::before{content:'÷'}
+.family-list.svelte-1j3xgcx{padding:16px}.family-option.svelte-1j3xgcx{border:1px solid #000;background:none;width:40px;height:40px;margin:12px;cursor:pointer}
+.test-type.svelte-gqze8s{border:none;background:none;font-size:48px;cursor:pointer;margin:0}.test-type.svelte-gqze8s:not(:last-of-type){border-bottom:2px solid black}
+
+/*# sourceMappingURL=bundle.css.map */
