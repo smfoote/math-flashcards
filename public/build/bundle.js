@@ -601,7 +601,7 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (133:2) {:else}
+    // (136:2) {:else}
     function create_else_block(ctx) {
     	let h3;
     	let t1;
@@ -626,9 +626,9 @@ var app = (function () {
     			}
 
     			attr_dev(h3, "class", "start");
-    			add_location(h3, file$1, 133, 4, 3392);
+    			add_location(h3, file$1, 136, 4, 3507);
     			attr_dev(div, "class", "family-list svelte-1j3xgcx");
-    			add_location(div, file$1, 134, 4, 3430);
+    			add_location(div, file$1, 137, 4, 3545);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -678,14 +678,14 @@ var app = (function () {
     		block,
     		id: create_else_block.name,
     		type: "else",
-    		source: "(133:2) {:else}",
+    		source: "(136:2) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (131:2) {#if family}
+    // (134:2) {#if family}
     function create_if_block(ctx) {
     	let problem;
     	let current;
@@ -732,14 +732,14 @@ var app = (function () {
     		block,
     		id: create_if_block.name,
     		type: "if",
-    		source: "(131:2) {#if family}",
+    		source: "(134:2) {#if family}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:6) {#each families as familyOption}
+    // (139:6) {#each families as familyOption}
     function create_each_block(ctx) {
     	let button;
     	let t0_value = /*familyOption*/ ctx[18] + "";
@@ -758,7 +758,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(button, "class", "family-option svelte-1j3xgcx");
-    			add_location(button, file$1, 136, 8, 3503);
+    			add_location(button, file$1, 139, 8, 3618);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -784,7 +784,7 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(136:6) {#each families as familyOption}",
+    		source: "(139:6) {#each families as familyOption}",
     		ctx
     	});
 
@@ -811,7 +811,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			if_block.c();
-    			add_location(div, file$1, 129, 0, 3308);
+    			add_location(div, file$1, 132, 0, 3423);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -926,6 +926,11 @@ var app = (function () {
     		const swap = Math.random() > 0.5;
     		$$invalidate(2, operandA = swap ? secondRandom : firstRandom);
     		$$invalidate(3, operandB = swap ? firstRandom : secondRandom);
+
+    		if (operator === "subtract" && operandB > operandA) {
+    			$$invalidate(2, [operandA, operandB] = [operandB, operandA], operandA, $$invalidate(3, operandB));
+    		}
+
     		answer = operations[operator](operandA, operandB);
     	};
 

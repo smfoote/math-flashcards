@@ -55,6 +55,9 @@
     const swap = Math.random() > 0.5;
     operandA = swap ? secondRandom : firstRandom;
     operandB = swap ? firstRandom : secondRandom;
+    if (operator === 'subtract' && operandB > operandA) {
+      [operandA, operandB] = [operandB, operandA];
+    }
     answer = operations[operator](operandA, operandB);
   };
 
