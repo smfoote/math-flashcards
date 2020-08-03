@@ -626,9 +626,9 @@ var app = (function () {
     			}
 
     			attr_dev(h3, "class", "start");
-    			add_location(h3, file$1, 136, 4, 3507);
+    			add_location(h3, file$1, 136, 4, 3546);
     			attr_dev(div, "class", "family-list svelte-1j3xgcx");
-    			add_location(div, file$1, 137, 4, 3545);
+    			add_location(div, file$1, 137, 4, 3584);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, h3, anchor);
@@ -758,7 +758,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr_dev(button, "class", "family-option svelte-1j3xgcx");
-    			add_location(button, file$1, 139, 8, 3618);
+    			add_location(button, file$1, 139, 8, 3657);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -811,7 +811,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			if_block.c();
-    			add_location(div, file$1, 132, 0, 3423);
+    			add_location(div, file$1, 132, 0, 3462);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -905,7 +905,7 @@ var app = (function () {
     		divide(a, b) {
     			$$invalidate(2, operandA = a * b);
     			$$invalidate(3, operandB = b);
-    			return a;
+    			return operandA === 0 && operandB === 0 ? 0 : a;
     		}
     	};
 

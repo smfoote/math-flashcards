@@ -37,7 +37,7 @@
     divide(a, b) {
       operandA = a * b;
       operandB = b;
-      return a;
+      return operandA === 0 && operandB === 0 ? 0 : a;
     },
   };
 
